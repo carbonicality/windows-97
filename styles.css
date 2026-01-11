@@ -1,0 +1,135 @@
+@font-face {
+    font-family:'w95';
+    src: url('./ari-w9500.otf') format('opentype');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family:'w95',sans-serif;
+    font-size: 11px;
+}
+
+.desktop {
+    width: 100vw;
+    height: 100vh;
+    background:#008080;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.win {
+    width: 500px;
+    background: #c0c0c0;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+.titlebar {
+    background: linear-gradient(90deg,#00165e,#1084d0);
+    padding: 3px 4px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center
+}
+
+.tb-txt {
+    color:#fff;
+    letter-spacing: 0;
+    padding-left:2px;
+}
+
+.tb-controls {
+    display: flex;
+    gap:2px;
+}
+
+.tb-btn {
+    width: 16px;
+    height: 14px;
+    background:#c0c0c0;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    font-size: 8px;
+    padding: 0;
+    cursor:pointer;
+    position:relative;
+}
+
+.tb-btn:active {
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.tb-btn.close {
+    font-size: 12px;
+    line-height: 10px;
+    font-weight: bold;
+}
+
+.menu-bar {
+    background: #c0c0c0;
+    display:flex;
+    gap: 8px;
+    padding: 2px 4px;
+    border-bottom: 1px solid #fff;
+}
+
+.menu-item {
+    padding: 2px 6px;
+    cursor:pointer;
+}
+
+.menu-item:hover {
+    background: #000080;
+    color: #fff;
+}
+
+.win-body {
+    background: #c0c0c0;
+    padding: 12px;
+    min-height: 200px;
+}
+
+.winbtn {
+    background: #c0c0c0;
+    border-top:2px solid #fff;
+    border-left:2px solid #fff;
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+    padding: 4px 12px;
+    margin:8px 4px 0 0;
+    font-family:'w95',sans-serif;
+    font-size: 11px;
+    cursor: pointer;
+    min-width: 75px;
+}
+
+.winbtn:active {
+    border-top:2px solid #000;
+    border-left:2px solid #000;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    padding: 5px 11px 3px 13px;
+}
+
+.winbtn:focus {
+    outline: 1px dotted #000;
+    outline-offset: -4px;
+}
+
+p {
+    margin: 0 0 8px 0;
+}
